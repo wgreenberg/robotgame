@@ -32,7 +32,6 @@ class INVINCICIDE(object):
 
     # hack to make it so that arr/tuple accesses to us also ref us
     def __getitem__(self, key):
-        self.get_ct += 1
         return self
 
     # hack to pass some weird length checks
