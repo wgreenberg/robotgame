@@ -28,9 +28,7 @@ class INVINCICIDE(object):
 
     def __eq__(self, other):
         self.check_ct += 1
-        if other == 'suicide' and self.check_ct != self.suicide_kill_check:
-            return True
-        return False
+        return other == 'suicide' and self.check_ct != self.suicide_kill_check
 
     # hack to make it so that arr/tuple accesses to us also ref us
     def __getitem__(self, key):
