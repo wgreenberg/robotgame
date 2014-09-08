@@ -1,5 +1,7 @@
 from rgkit import rg
 
+# works in rgkit 0.4.3
+
 class Robot:
     def act(self, game):
         p = INVINCICIDE()
